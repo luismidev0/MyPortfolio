@@ -1,25 +1,37 @@
-import './services.css';
-import Title from '../../components/atoms/Title/Title';
-import Card from '../../components/molecules/Card/Card';
-import frontEnd from '../../assets/img/ServicesFrontEnd.png'
-import backEnd from '../../assets/img/ServicesBackEnd.png'
-import TotoroEyes from '../../components/models/AnimationTotoro/TotoroEyes';
-import Layout from "../../_config/Layout"
-const Services = () => {
-  return (
-    <Layout className='cardd'>
-      <div className="text-title__services">
-        <Title text={'Services'} level={'h3'} />
-      </div>
-      <div className="card-services">
-        <Card image={frontEnd} alt={'image-frontend'} name={'Front End'} description={'Passionate about front-end development, he enjoys transforming creative designs into interactive and functional experiences.'} />
-        <Card image={backEnd} alt={'image-backend'} name={'Back End'} description={'Throughout his learning and projects he knows how to work with cruds, websockets, database connections, tokens, cookies and password encryption.'} />
-      </div>
-      <div className="animation-eyes">
-        <TotoroEyes/>
-      </div>
-    </Layout>
-  )
-}
+import { useApp } from '../../context/AppContext';
+import { useReveal } from '../../components/ui/useReveal';
+import SectionHead from '../../components/ui/SectionHead';
+import Icon from '../../components/ui/Icon';
+import Totoro3D from '../../components/Totoro3D';
 
-export default Services
+export default function Services() {
+  const { t } = useApp();
+  const s = t.services;
+  const ref = useReveal([t]);
+  const icoFor = (k) => (k === 'front' ? 'layout' : 'server');
+
+  return (
+    <div ref={ref} className="page-enter">
+      <section className="block-lg">
+        <SectionHead idx={s.idx} title={s.title} />
+        <p className="prose reveal" style={{ marginBottom: 40 }}>{s.intro}</p>
+        <div className="grid-2">
+          {s.cards.map((c, i) => (
+            <div className="card svc-card reveal" key={i}>
+              <div className="ico"><Icon name={icoFor(c.key)} /></div>
+              <h3>{c.name}</h3>
+              <p>{c.desc}</p>
+              <div className="tags">
+                {c.tags.map((tag) => <span className="tag" key={tag}>{tag}</span>)}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="reveal">
+          <Totoro3D label={s.totoro} />
+        </div>
+      </section>
+    </div>
+  );
+}

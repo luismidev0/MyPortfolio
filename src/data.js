@@ -1,0 +1,383 @@
+// ============================================================
+// Bilingual content + portfolio data
+// ============================================================
+export const PF = {
+  social: {
+    github: "https://github.com/LuisMiguelDevelopment",
+    email: "luismidev09@gmail.com",
+    live: "https://miguel-alvarez-dev.vercel.app/",
+  },
+
+  i18n: {
+    en: {
+      nav: { about: "About", services: "Services", projects: "Projects", knowledge: "Knowledge" },
+      hero: {
+        greet: "Based in Medellín, Colombia",
+        line1: "Web developer",
+        line2: "crafting",
+        line3: "ideas into code",
+        role: "I'm <b>Luis Miguel Álvarez</b> — a software developer who turns creative designs into interactive, functional web experiences.",
+        cta1: "Get in touch",
+        cta2: "View projects",
+        drag: "Drag to orbit",
+        scroll: "Scroll to explore",
+      },
+      about: {
+        idx: "01",
+        title: "About",
+        role: "Software Developer · SENA",
+        body: "I'm Luis Miguel, a web developer based in Medellín, with the ability to capture ideas and translate them into clean, functional code. Creative and dependable, in my free time I like to play video games, draw, and keep learning.",
+        bioTitle: "Bio",
+        bio: [
+          { year: "2003", text: "Born in Itagüí, Colombia." },
+          { year: "2022", text: "Began software analysis & development studies at SENA." },
+          { year: "2024", text: "Completed software developer internship (SENA)." },
+          { year: "Now", text: "Building real-world products for clients — full-stack web apps." },
+        ],
+        recsTitle: "Recommendations",
+        recs: [
+          { img: "/assets/img/rec_reinaldo.png", name: "Reinaldo F. Orozco", r1: "Full Stack Web Developer", r2: "JavaScript · TypeScript · React.js · Node.js · Next.js" },
+          { img: "/assets/img/rec_alejandro.png", name: "Alejandro Álvarez", r1: "AI Engineer", r2: "Node.js · React.js · TypeScript · Generative AI" },
+          { img: "/assets/img/rec_elias.png", name: "Elías Jiménez Diz", r1: "Technical Lead · Full Stack", r2: "TypeScript · Next.js · Node.js" },
+          { img: "/assets/img/rec_cristian.png", name: "Cristian Puentes", r1: "Backend Developer", r2: "Django · Flask · Python" },
+        ],
+        expTitle: "Experience",
+        experience: [
+          {
+            company: "Geeks5G Marketing Agency",
+            meta: "Full-time · 1 yr · Medellín, Colombia",
+            roles: [
+              {
+                title: "Project Leader",
+                period: "Nov 2025 — Present",
+                length: "8 mo",
+                mode: "Remote",
+                product: "RankTitan.ai",
+                desc: "I lead the development of RankTitan.ai, an AI-powered local SEO platform that helps businesses dominate their Google Maps visibility, manage their online reputation, and track local search performance through automation. As technical lead I drive the architecture, coordinate the dev team, and turn business goals into scalable solutions — combining full-stack development with GMB optimization, Google & Meta ad campaigns, and AI-driven reports, heatmaps and analytics.",
+                tags: ["Technical Lead", "AI / SEO", "Heatmaps", "Analytics", "Ads"],
+              },
+              {
+                title: "Full Stack Developer",
+                period: "Jul 2025 — Present",
+                length: "1 yr",
+                mode: "On-site",
+                desc: "I lead end-to-end design and implementation (NestJS backend, Next.js frontend, Prisma/PostgreSQL), from spec to production. I built automated public reports with AI summaries (Gemini), email/SMS delivery (SendGrid, Twilio), integrations with the Meta Graph API (native FB/IG publishing, token auto-refresh) and PayArc, plus a per-action credit system. I coordinate the team and CI/CD releases, and resolve production incidents autonomously.",
+                tags: ["NestJS", "Next.js", "Prisma", "PostgreSQL", "Gemini", "Meta Graph API", "CI/CD"],
+              },
+            ],
+          },
+          {
+            company: "C-Pocket · Pocki Virtual Assistant",
+            meta: "Full-time · 6 mo · Medellín, Colombia",
+            roles: [
+              {
+                title: "Full Stack Developer",
+                period: "Feb 2025 — Jul 2025",
+                length: "6 mo",
+                mode: "On-site",
+                desc: "Full Stack Developer specialized in building AI agents with LangChain, integrated with advanced language models. I developed efficient, scalable web apps with Node.js and Next.js using MySQL, plus complex integrations with multiple payment systems — improving the user experience and automating processes.",
+                tags: ["LangChain", "OpenAI API", "Node.js", "Next.js", "MySQL", "Automation"],
+              },
+            ],
+          },
+        ],
+      },
+      services: {
+        idx: "02",
+        title: "Services",
+        intro: "What I can build for you — end to end.",
+        cards: [
+          {
+            key: "front",
+            name: "Front End",
+            desc: "Passionate about front-end development — I transform creative designs into interactive, responsive and accessible experiences.",
+            tags: ["React", "Next.js", "Three.js", "Framer Motion", "Chakra UI"],
+          },
+          {
+            key: "back",
+            name: "Back End",
+            desc: "Comfortable with CRUDs, websockets, database connections, authentication tokens, cookies and password encryption.",
+            tags: ["Node.js", "MySQL", "SQL Server", "Socket.io", "Docker"],
+          },
+        ],
+        totoro: "Drag to orbit",
+      },
+      projects: {
+        idx: "03",
+        title: "Projects",
+        intro: "A selection of things I've designed, built and shipped.",
+        participation: "Participation",
+        visit: "Visit site",
+        code: "View code",
+      },
+      knowledge: {
+        idx: "04",
+        title: "Knowledge",
+        intro: "The tools and technologies I work with every day.",
+        cats: [
+          {
+            name: "Front End",
+            skills: [
+              { n: "React / Next.js", l: "Advanced", v: 90 },
+              { n: "JavaScript / TypeScript", l: "Advanced", v: 88 },
+              { n: "HTML & CSS", l: "Advanced", v: 92 },
+              { n: "Three.js / Framer Motion", l: "Intermediate", v: 72 },
+            ],
+          },
+          {
+            name: "Back End",
+            skills: [
+              { n: "Node.js / Express", l: "Advanced", v: 85 },
+              { n: "MySQL / SQL Server", l: "Advanced", v: 82 },
+              { n: "Socket.io", l: "Intermediate", v: 75 },
+              { n: "REST & Auth (JWT)", l: "Advanced", v: 80 },
+            ],
+          },
+          {
+            name: "Tools",
+            skills: [
+              { n: "Git & GitHub", l: "Advanced", v: 88 },
+              { n: "Docker", l: "Intermediate", v: 70 },
+              { n: "Vite", l: "Advanced", v: 85 },
+              { n: "Chakra UI / Tailwind", l: "Advanced", v: 84 },
+            ],
+          },
+        ],
+        hint: "Keep scrolling",
+      },
+      footer: {
+        cta: "Have a project in mind? Let's",
+        ctaLink: "build something together.",
+        rights: "All rights reserved.",
+      },
+    },
+
+    es: {
+      nav: { about: "Sobre mí", services: "Servicios", projects: "Proyectos", knowledge: "Conocimientos" },
+      hero: {
+        greet: "Desde Medellín, Colombia",
+        line1: "Desarrollador web",
+        line2: "que convierte",
+        line3: "ideas en código",
+        role: "Soy <b>Luis Miguel Álvarez</b> — desarrollador de software que transforma diseños creativos en experiencias web interactivas y funcionales.",
+        cta1: "Contáctame",
+        cta2: "Ver proyectos",
+        drag: "Arrastra para orbitar",
+        scroll: "Desliza para explorar",
+      },
+      about: {
+        idx: "01",
+        title: "Sobre mí",
+        role: "Desarrollador de Software · SENA",
+        body: "Soy Luis Miguel, un desarrollador web radicado en Medellín, con la capacidad de capturar ideas y traducirlas en código limpio y funcional. Creativo y responsable, en mi tiempo libre me gusta jugar videojuegos, dibujar y seguir aprendiendo.",
+        bioTitle: "Biografía",
+        bio: [
+          { year: "2003", text: "Nací en Itagüí, Colombia." },
+          { year: "2022", text: "Inicio de estudios de análisis y desarrollo de software en el SENA." },
+          { year: "2024", text: "Etapa de práctica como desarrollador de software completada (SENA)." },
+          { year: "Ahora", text: "Desarrollando productos reales para clientes — aplicaciones web full-stack." },
+        ],
+        recsTitle: "Recomendaciones",
+        recs: [
+          { img: "/assets/img/rec_reinaldo.png", name: "Reinaldo F. Orozco", r1: "Full Stack Web Developer", r2: "JavaScript · TypeScript · React.js · Node.js · Next.js" },
+          { img: "/assets/img/rec_alejandro.png", name: "Alejandro Álvarez", r1: "AI Engineer", r2: "Node.js · React.js · TypeScript · Generative AI" },
+          { img: "/assets/img/rec_elias.png", name: "Elías Jiménez Diz", r1: "Technical Lead · Full Stack", r2: "TypeScript · Next.js · Node.js" },
+          { img: "/assets/img/rec_cristian.png", name: "Cristian Puentes", r1: "Backend Developer", r2: "Django · Flask · Python" },
+        ],
+        expTitle: "Experiencia",
+        experience: [
+          {
+            company: "Geeks5G Marketing Agency",
+            meta: "Jornada completa · 1 año · Medellín, Colombia",
+            roles: [
+              {
+                title: "Project Leader",
+                period: "Nov 2025 — Actualidad",
+                length: "8 meses",
+                mode: "En remoto",
+                product: "RankTitan.ai",
+                desc: "Lidero el desarrollo de RankTitan.ai, una plataforma de SEO local impulsada por IA que ayuda a los negocios a dominar su visibilidad en Google Maps, gestionar su reputación online y medir su rendimiento en búsquedas locales mediante automatización. Como líder técnico defino la arquitectura, coordino al equipo de desarrollo y traduzco objetivos de negocio en soluciones escalables — combinando desarrollo full-stack con optimización de GMB, campañas en Google y Meta, e informes, mapas de calor y analíticas generados con IA.",
+                tags: ["Líder técnico", "IA / SEO", "Mapas de calor", "Analíticas", "Ads"],
+              },
+              {
+                title: "Full Stack Developer",
+                period: "Jul 2025 — Actualidad",
+                length: "1 año",
+                mode: "Presencial",
+                desc: "Lidero el diseño e implementación de principio a fin (backend en NestJS, frontend en Next.js, Prisma/PostgreSQL), desde la especificación hasta producción. Construí informes públicos automatizados con resúmenes de IA (Gemini), envío por email/SMS (SendGrid, Twilio), integraciones con la Meta Graph API (publicación nativa en FB/IG, auto-refresco de tokens) y PayArc, además de un sistema de créditos por acción. Coordino al equipo y los despliegues CI/CD, y resuelvo incidentes en producción de forma autónoma.",
+                tags: ["NestJS", "Next.js", "Prisma", "PostgreSQL", "Gemini", "Meta Graph API", "CI/CD"],
+              },
+            ],
+          },
+          {
+            company: "C-Pocket · Pocki Asistente Virtual",
+            meta: "Jornada completa · 6 meses · Medellín, Colombia",
+            roles: [
+              {
+                title: "Full Stack Developer",
+                period: "Feb 2025 — Jul 2025",
+                length: "6 meses",
+                mode: "Presencial",
+                desc: "Desarrollador Full Stack especializado en la creación de agentes de IA con LangChain, integrados con modelos de lenguaje avanzados. Desarrollé aplicaciones web eficientes y escalables con Node.js y Next.js usando MySQL, además de integraciones complejas con múltiples sistemas de pago — mejorando la experiencia de usuario y automatizando procesos.",
+                tags: ["LangChain", "OpenAI API", "Node.js", "Next.js", "MySQL", "Automatización"],
+              },
+            ],
+          },
+        ],
+      },
+      services: {
+        idx: "02",
+        title: "Servicios",
+        intro: "Lo que puedo construir para ti — de principio a fin.",
+        cards: [
+          {
+            key: "front",
+            name: "Front End",
+            desc: "Apasionado por el desarrollo front-end — transformo diseños creativos en experiencias interactivas, responsivas y accesibles.",
+            tags: ["React", "Next.js", "Three.js", "Framer Motion", "Chakra UI"],
+          },
+          {
+            key: "back",
+            name: "Back End",
+            desc: "Manejo CRUDs, websockets, conexiones a bases de datos, tokens de autenticación, cookies y encriptación de contraseñas.",
+            tags: ["Node.js", "MySQL", "SQL Server", "Socket.io", "Docker"],
+          },
+        ],
+        totoro: "Arrastra para orbitar",
+      },
+      projects: {
+        idx: "03",
+        title: "Proyectos",
+        intro: "Una selección de cosas que he diseñado, construido y publicado.",
+        participation: "Participación",
+        visit: "Visitar sitio",
+        code: "Ver código",
+      },
+      knowledge: {
+        idx: "04",
+        title: "Conocimientos",
+        intro: "Las herramientas y tecnologías con las que trabajo cada día.",
+        cats: [
+          {
+            name: "Front End",
+            skills: [
+              { n: "React / Next.js", l: "Avanzado", v: 90 },
+              { n: "JavaScript / TypeScript", l: "Avanzado", v: 88 },
+              { n: "HTML y CSS", l: "Avanzado", v: 92 },
+              { n: "Three.js / Framer Motion", l: "Intermedio", v: 72 },
+            ],
+          },
+          {
+            name: "Back End",
+            skills: [
+              { n: "Node.js / Express", l: "Avanzado", v: 85 },
+              { n: "MySQL / SQL Server", l: "Avanzado", v: 82 },
+              { n: "Socket.io", l: "Intermedio", v: 75 },
+              { n: "REST y Auth (JWT)", l: "Avanzado", v: 80 },
+            ],
+          },
+          {
+            name: "Herramientas",
+            skills: [
+              { n: "Git y GitHub", l: "Avanzado", v: 88 },
+              { n: "Docker", l: "Intermedio", v: 70 },
+              { n: "Vite", l: "Avanzado", v: 85 },
+              { n: "Chakra UI / Tailwind", l: "Avanzado", v: 84 },
+            ],
+          },
+        ],
+        hint: "Sigue deslizando",
+      },
+      footer: {
+        cta: "¿Tienes un proyecto en mente? Vamos a",
+        ctaLink: "construir algo juntos.",
+        rights: "Todos los derechos reservados.",
+      },
+    },
+  },
+
+  projects: [
+    {
+      img: "/assets/img/proj_ranktitan.png",
+      name: "RankTitan.ai",
+      link: "https://ranktitan.ai",
+      icon: "link",
+      badge: "Lead · AI SEO",
+      stack: ["NestJS", "Next.js", "Prisma", "PostgreSQL", "Gemini", "Meta Graph API", "PayArc"],
+      desc_en: "AI-powered local SEO platform that helps businesses dominate Google Maps visibility, manage their reputation and track local rankings — with automated AI reports, heatmaps and analytics. As technical lead I drive its architecture and the dev team.",
+      desc_es: "Plataforma de SEO local con IA que ayuda a los negocios a dominar su visibilidad en Google Maps, gestionar su reputación y medir su posicionamiento — con informes, mapas de calor y analíticas automatizadas. Como líder técnico defino su arquitectura y coordino el equipo.",
+      feature: true,
+    },
+    {
+      img: "/assets/img/proj_socialhub.png",
+      name: "SocialHub",
+      icon: "link",
+      badge: "Lead · Geeks5G",
+      stack: ["NestJS", "Next.js", "Meta Graph API", "SendGrid", "Twilio", "PostgreSQL"],
+      desc_en: "Multi-account social platform to schedule, publish and grow across Facebook, Instagram, LinkedIn and TikTok — with native FB/IG publishing via the Meta Graph API, token auto-refresh and email/SMS delivery. As technical lead I drove the end-to-end design and architecture and coordinated the team and CI/CD releases.",
+      desc_es: "Plataforma social multi-cuenta para programar, publicar y crecer en Facebook, Instagram, LinkedIn y TikTok — con publicación nativa en FB/IG vía Meta Graph API, auto-refresco de tokens y envío por email/SMS. Como líder técnico dirigí el diseño y la arquitectura de principio a fin y coordiné el equipo y los despliegues CI/CD.",
+    },
+    {
+      img: "/assets/img/proj_pocki.png",
+      name: "Pocki",
+      icon: "link",
+      badge: "AI · LangChain",
+      stack: ["LangChain", "Node.js", "Next.js", "MySQL", "LLMs"],
+      desc_en: "An AI assistant (WhatsApp chatbot) built with LangChain and advanced language models. As full-stack developer I built efficient, scalable web apps with Node.js and Next.js over MySQL, plus complex integrations with multiple payment systems — automating purchases, reminders and document analysis.",
+      desc_es: "Asistente de IA (chatbot de WhatsApp) creado con LangChain e integrado con modelos de lenguaje avanzados. Como desarrollador full-stack construí aplicaciones web eficientes y escalables con Node.js y Next.js sobre MySQL, además de integraciones complejas con múltiples sistemas de pago — automatizando compras, recordatorios y análisis de documentos.",
+    },
+    {
+      img: "/assets/img/scriptCraftHost.png",
+      name: "ScriptCraftHost",
+      link: "https://script-craft-host.vercel.app/",
+      icon: "link",
+      badge: "Full-stack",
+      stack: ["Next.js", "Chakra UI", "Node.js", "MySQL", "Docker", "SSH2", "Socket.io"],
+      desc_en: "Game-server hosting platform with containerized server management, secure SSH connections and real-time status updates.",
+      desc_es: "Plataforma de hosting de servidores de juegos con gestión por contenedores, conexiones SSH seguras y actualizaciones en tiempo real.",
+    },
+    {
+      img: "/assets/img/streamingCol.png",
+      name: "StreamingCol",
+      link: "https://www.streamingcol.online",
+      icon: "link",
+      badge: "Client work",
+      stack: ["Next.js", "Chakra UI", "Node.js", "MySQL"],
+      desc_en: "Web app for a client selling streaming services — full catalog, accounts and checkout flow.",
+      desc_es: "Aplicación web para un cliente que vende servicios de streaming — catálogo, cuentas y flujo de compra.",
+    },
+    {
+      img: "/assets/img/VISIONWEB.png",
+      name: "Vision Web",
+      link: "https://github.com/LuisMiguelDevelopment/VISIONWEB.git",
+      icon: "github",
+      badge: "Social",
+      stack: ["Next.js", "Socket.io", "Simple-peer", "SQL Server", "Node.js"],
+      desc_en: "A video-call social network where you interact with friends in real time, built with WebRTC peer connections.",
+      desc_es: "Red social de videollamadas donde interactúas con amigos en tiempo real, construida con conexiones WebRTC.",
+    },
+    {
+      img: "/assets/img/Licorerala69.jpg",
+      name: "Licorera la 69",
+      link: "https://github.com/LuisMiguelDevelopment/LicoreraLa69.git",
+      icon: "github",
+      badge: "E-commerce",
+      stack: ["React", "Node.js", "MySQL"],
+      desc_en: "Shopping-cart web app for a liquor store in Itagüí, Antioquia — the capstone project built at SENA.",
+      desc_es: "Aplicación de carrito de compras para una licorera en Itagüí, Antioquia — proyecto principal del SENA.",
+    },
+  ],
+
+  participation: [
+    {
+      img: "/assets/img/PRACTICASCTM.png",
+      name: "Prácticas CTM",
+      link: "https://github.com/sena-proyectos/practicas-ctm.git",
+      icon: "github",
+      badge: "Team project",
+      stack: ["React", "Node.js"],
+      desc_en: "Platform for registering and following up trainees currently in the practical stage of their training program.",
+      desc_es: "Plataforma para el registro y seguimiento de aprendices que cursan la etapa práctica de su programa de formación.",
+    },
+  ],
+};

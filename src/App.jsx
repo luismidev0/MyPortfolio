@@ -1,41 +1,34 @@
-
-import './App.css'
-import './_config/mode_white_Black.css'
-import { Route, BrowserRouter, Routes } from 'react-router-dom';
+import { useEffect } from 'react';
+import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
+import Nav from './components/Nav';
+import Footer from './components/Footer';
 import About from './pages/about/About';
 import Services from './pages/services/Services';
 import Projects from './pages/projects/Projects';
-import { useThemeContext } from './context/ThemeContext'
-import DefaultLayout from './components/templates/DefaultLayout';
-import Text from './components/atoms/Text/Text';
 import Knowledge from './pages/knowledge/Knowledge';
 
-function App() {
-
-
-  const { contextTheme, setContextTheme } = useThemeContext();
-
-
-  return (
-    <div className="general" id={contextTheme}>
-      <BrowserRouter>
-        <DefaultLayout />
-        <div className="central">
-          <Routes>
-            <Route path='/' element={<About />} />
-            <Route path='/Services' element={<Services />} />
-            <Route path='/Projects' element={<Projects />} />
-            <Route path='/Knowledge' element={<Knowledge />} />
-          </Routes>
-        </div>
-        <div className="copyright">
-          <Text text={'Miguel Alvarez © 2024'} />
-        </div>
-      </BrowserRouter>
-
-
-    </div>
-  )
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  }, [pathname]);
+  return null;
 }
 
-export default App
+export default function App() {
+  return (
+    <BrowserRouter>
+      <ScrollToTop />
+      <Nav />
+      <main className="page wrap">
+        <Routes>
+          <Route path="/" element={<About />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/knowledge" element={<Knowledge />} />
+        </Routes>
+      </main>
+      <Footer />
+    </BrowserRouter>
+  );
+}
