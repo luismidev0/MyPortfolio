@@ -13,6 +13,7 @@ const ICONS = {
   close: (<><path d="M18 6 6 18M6 6l12 12" /></>),
   spark: <path d="M12 2l1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8z" />,
   mouse: (<><rect x="7" y="3" width="10" height="18" rx="5" /><path d="M12 7v3" /></>),
+  download: (<><path d="M12 3v12" /><path d="m7 11 5 5 5-5" /><path d="M5 21h14" /></>),
 };
 
 const FILL_ICONS = ['github', 'moon', 'spark'];

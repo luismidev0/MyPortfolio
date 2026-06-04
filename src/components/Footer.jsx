@@ -22,6 +22,7 @@ export default function Footer() {
             <a className="social" href={s.github} target="_blank" rel="noreferrer" aria-label="GitHub"><Icon name="github" /></a>
             <a className="social" href={'mailto:' + s.email} aria-label="Email"><Icon name="mail" /></a>
             <a className="social" href={s.live} target="_blank" rel="noreferrer" aria-label="Live site"><Icon name="external" /></a>
+            <a className="social" href={s.cv} download="LuisMiguelAlvarez-CV.pdf" aria-label={t.hero.cv} title={t.hero.cv}><Icon name="download" /></a>
           </div>
         </div>
       </div>

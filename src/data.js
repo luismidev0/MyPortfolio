@@ -6,6 +6,7 @@ export const PF = {
     github: "https://github.com/LuisMiguelDevelopment",
     email: "luismidev09@gmail.com",
     live: "https://miguel-alvarez-dev.vercel.app/",
+    cv: "/cv/LuisMiguelAlvarez-CV.pdf",
   },
 
   i18n: {
@@ -19,6 +20,7 @@ export const PF = {
         role: "I'm <b>Luis Miguel Álvarez</b> — a software developer who turns creative designs into interactive, functional web experiences.",
         cta1: "Get in touch",
         cta2: "View projects",
+        cv: "Download CV",
         drag: "Drag to orbit",
         scroll: "Scroll to explore",
       },
@@ -162,6 +164,7 @@ export const PF = {
         role: "Soy <b>Luis Miguel Álvarez</b> — desarrollador de software que transforma diseños creativos en experiencias web interactivas y funcionales.",
         cta1: "Contáctame",
         cta2: "Ver proyectos",
+        cv: "Descargar HV",
         drag: "Arrastra para orbitar",
         scroll: "Desliza para explorar",
       },

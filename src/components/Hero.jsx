@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { initHero3D } from '../three/scenes';
+import { PF } from '../data';
 import Icon from './ui/Icon';
 import ContactButton from './ui/ContactButton';
 
@@ -28,6 +29,9 @@ export default function Hero({ t }) {
           <button className="btn btn-ghost" onClick={() => navigate('/projects')}>
             {t.hero.cta2} <Icon name="arrowRight" />
           </button>
+          <a className="btn btn-ghost" href={PF.social.cv} download="LuisMiguelAlvarez-CV.pdf">
+            <Icon name="download" /> {t.hero.cv}
+          </a>
         </div>
       </div>
 
