@@ -1,5 +1,6 @@
 import { useApp } from '../../context/AppContext';
 import { useReveal } from '../../components/ui/useReveal';
+import { useSeo } from '../../hooks/useSeo';
 import SectionHead from '../../components/ui/SectionHead';
 import Hero from '../../components/Hero';
 
@@ -7,6 +8,7 @@ export default function About() {
   const { t, theme } = useApp();
   const a = t.about;
   const ref = useReveal([t]);
+  useSeo({ title: 'Luis Miguel Álvarez — Web Developer', description: a.body, path: '/' });
 
   return (
     <div ref={ref}>

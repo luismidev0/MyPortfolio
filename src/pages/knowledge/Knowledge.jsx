@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useApp } from '../../context/AppContext';
 import { useReveal } from '../../components/ui/useReveal';
+import { useSeo } from '../../hooks/useSeo';
 import SectionHead from '../../components/ui/SectionHead';
 import Icon from '../../components/ui/Icon';
 
@@ -8,6 +9,7 @@ export default function Knowledge() {
   const { t } = useApp();
   const k = t.knowledge;
   const ref = useReveal([t]);
+  useSeo({ title: `${k.title} — Luis Miguel Álvarez`, description: k.intro, path: '/knowledge' });
 
   useEffect(() => {
     const root = ref.current;

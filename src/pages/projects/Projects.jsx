@@ -1,12 +1,14 @@
 import { PF } from '../../data';
 import { useApp } from '../../context/AppContext';
 import { useReveal } from '../../components/ui/useReveal';
+import { useSeo } from '../../hooks/useSeo';
 import SectionHead from '../../components/ui/SectionHead';
 import ProjectCard from '../../components/ProjectCard';
 
 export default function Projects() {
   const { t, lang } = useApp();
   const ref = useReveal([t]);
+  useSeo({ title: `${t.projects.title} — Luis Miguel Álvarez`, description: t.projects.intro, path: '/projects' });
 
   return (
     <div ref={ref} className="page-enter">

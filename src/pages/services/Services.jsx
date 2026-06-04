@@ -1,5 +1,6 @@
 import { useApp } from '../../context/AppContext';
 import { useReveal } from '../../components/ui/useReveal';
+import { useSeo } from '../../hooks/useSeo';
 import SectionHead from '../../components/ui/SectionHead';
 import Icon from '../../components/ui/Icon';
 import Totoro3D from '../../components/Totoro3D';
@@ -8,6 +9,7 @@ export default function Services() {
   const { t } = useApp();
   const s = t.services;
   const ref = useReveal([t]);
+  useSeo({ title: `${s.title} — Luis Miguel Álvarez`, description: s.intro, path: '/services' });
   const icoFor = (k) => (k === 'front' ? 'layout' : 'server');
 
   return (
