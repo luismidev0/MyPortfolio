@@ -5,7 +5,7 @@ import { PF } from '../data';
 import Icon from './ui/Icon';
 import ContactButton from './ui/ContactButton';
 
-export default function Hero({ t }) {
+export default function Hero({ t, lang }) {
   const canvasRef = useRef(null);
   const navigate = useNavigate();
   const [loaded, setLoaded] = useState(false);
@@ -29,7 +29,7 @@ export default function Hero({ t }) {
           <button className="btn btn-ghost" onClick={() => navigate('/projects')}>
             {t.hero.cta2} <Icon name="arrowRight" />
           </button>
-          <a className="btn btn-ghost" href={PF.social.cv} download="LuisMiguelAlvarez-CV.pdf">
+          <a className="btn btn-ghost" href={PF.social.cv[lang]} download>
             <Icon name="download" /> {t.hero.cv}
           </a>
         </div>
@@ -47,8 +47,6 @@ export default function Hero({ t }) {
           </div>
         )}
       </div>
-
-      <div className="scroll-cue"><span className="line"></span>{t.hero.scroll}</div>
     </section>
   );
 }

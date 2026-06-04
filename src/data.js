@@ -6,7 +6,10 @@ export const PF = {
     github: "https://github.com/LuisMiguelDevelopment",
     email: "luismidev09@gmail.com",
     live: "https://miguel-alvarez-dev.vercel.app/",
-    cv: "/cv/LuisMiguelAlvarez-CV.pdf",
+    cv: {
+      en: "/cv/CV_Luis_Miguel_Alvarez_EN.pdf",
+      es: "/cv/CV_Luis_Miguel_Alvarez_ES.pdf",
+    },
   },
 
   i18n: {
